@@ -16,6 +16,29 @@ header{background:white;border-bottom:1px solid #ede8e5}.head{display:flex;align
     flex-shrink:0;
 }
 
+.brand-th {
+    font-weight: 800;
+    font-size: clamp(13px, 2vw, 17px);
+    line-height: 1.4;
+}
+
+.brand-en {
+    font-size: 10px;
+    letter-spacing: .08em;
+    color: #7f7774;
+}
+
+.headlabel {
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #eee1df;
+    padding: 7px 12px;
+    border-radius: 50px;
+    color: #8b2530;
+    white-space: nowrap;
+}
+
+
 .hero{position:relative;isolation:isolate;overflow:hidden;padding:64px 0 72px;background:linear-gradient(118deg,#fffaf5 0%,#fff 56%,#f7e9e8 100%)}.hero:after{position:absolute;content:'';width:440px;height:440px;border:84px solid rgba(174,30,48,.045);border-radius:100%;right:-250px;top:-250px;z-index:-1}.eyebrow{color:#ae1e30;font-weight:800;font-size:12px;letter-spacing:.15em;text-transform:uppercase}.hero h1{font-size:clamp(33px,5.1vw,62px);line-height:1.23;letter-spacing:-.035em;margin:13px 0 18px;font-weight:800}.hero h1 span{color:var(--red)}.hero p{font-size:clamp(15px,2vw,18px);color:#595962;max-width:670px;margin:0}.hero-bottom{margin-top:28px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;text-decoration:none;border-radius:12px;padding:13px 22px;font-weight:700;transition:transform .2s,background .2s}.primary:hover{transform:translateY(-2px);background:var(--red-dark)}.subtle{font-size:13px;color:#756d68}
 main{padding:44px 0 68px}.section-top{display:flex;justify-content:space-between;gap:18px;align-items:end;flex-wrap:wrap;margin-bottom:20px}.section-kicker{font-size:12px;letter-spacing:.05em;font-weight:800;color:var(--red)}h2{font-size:clamp(22px,3vw,29px);line-height:1.42;margin:3px 0}.section-desc{font-size:14px;color:var(--muted);margin:3px 0}.small-count{color:#7d7370;font-size:12px;font-weight:700;background:white;border:1px solid var(--border);border-radius:50px;padding:6px 12px}
 .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{display:flex;flex-direction:column;min-height:236px;background:white;border:1px solid var(--border);border-radius:19px;padding:23px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:#dcbdc0}.card-icon{width:44px;height:44px;display:grid;place-items:center;background:#fbebed;color:var(--red);border-radius:13px;font-size:22px;font-weight:800}.card h3{font-size:20px;margin:16px 0 5px}.card p{font-size:13px;margin:0;color:#62646b;line-height:1.75}.card .open{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:auto;padding-top:19px;text-decoration:none;color:var(--red);font-size:14px;font-weight:800}.card .open:hover{text-decoration:underline}.arrow{font-size:22px;line-height:1}
@@ -38,10 +61,28 @@ footer{background:#303238;color:#f7f7f7;padding:26px 0}.foot{display:flex;flex-w
 @media(max-width:580px){.qr-code,.feature .qr-code{width:190px}.qr-area{margin-top:17px}}
 @media print{.qr-link{box-shadow:none}.card,.feature{break-inside:avoid} .qr-code,.feature .qr-code{width:155px}}
 </style></head><body>
-<header><div class="shell head"><div class="identity">
-<img class="mark"
-     src="https://raw.githubusercontent.com/HOIARRTool/MCHVOC/main/mfu_logo.png"
-     alt="โลโก้โรงพยาบาลศูนย์การแพทย์มหาวิทยาลัยแม่ฟ้าหลวง">
+
+<header>
+  <div class="shell head">
+    <div class="identity">
+      <img
+        class="mark"
+        src="https://raw.githubusercontent.com/HOIARRTool/MCHVOC/main/mfu_logo.png"
+        alt="โลโก้โรงพยาบาลศูนย์การแพทย์มหาวิทยาลัยแม่ฟ้าหลวง"
+      >
+      <div>
+        <div class="brand-th">
+          โรงพยาบาลศูนย์การแพทย์มหาวิทยาลัยแม่ฟ้าหลวง
+        </div>
+        <div class="brand-en">
+          MAE FAH LUANG UNIVERSITY MEDICAL CENTER HOSPITAL
+        </div>
+      </div>
+    </div>
+    <span class="headlabel">ศูนย์รวมช่องทางรับฟังเสียง</span>
+  </div>
+</header>
+
 
 <section class="hero"><div class="shell"><div class="eyebrow">MFU-MCH VOICE CENTER</div><h1>ทุกเสียงมีคุณค่า<br><span>ทุกความคิดเห็นนำไปสู่การพัฒนา</span></h1><p>เลือกช่องทางที่ตรงกับความต้องการของคุณ ไม่ว่าจะเป็นการประเมินประสบการณ์การรับบริการ การเสนอแนะ การร้องเรียน หรือการสื่อสารถึงผู้อำนวยการโรงพยาบาล</p><div class="hero-bottom"><a class="primary" href="#experience">เลือกช่องทางของคุณ <span aria-hidden="true">↘</span></a><span class="subtle">รวบรวม 5 ช่องทางไว้ในที่เดียว</span></div></div></section>
 <main class="shell">
